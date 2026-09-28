@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ScanDukaan</title>
+  <meta name="description" content="Privacy Policy for ScanDukaan mobile application by Vamaha Tech. Learn how we handle your business, inventory, and customer data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #F97316;
+      --primary-dark: #EA580C;
+      --primary-light: #FFEDD5;
+      --slate-900: #0F172A;
+      --slate-800: #1E293B;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748B;
+      --slate-200: #E2E8F0;
+      --slate-100: #F1F5F9;
+      --slate-50: #F8FAFC;
+      --bg: #FFFFFF;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --radius: 12px;
+      --radius-lg: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--slate-50);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--slate-200);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--slate-900);
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
+    }
+
+    .brand-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+    }
+
+    .hero-banner {
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--slate-50) 100%);
+      padding: 4rem 1.5rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 0.825rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-subtitle {
+      color: var(--slate-500);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .page-container {
+      max-width: 900px;
+      margin: 2.5rem auto 5rem;
+      padding: 0 1.5rem;
+    }
+
+    .content-card {
+      background: var(--card-bg);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 3rem;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+    }
+
+    @media (max-width: 640px) {
+      .content-card {
+        padding: 1.75rem 1.25rem;
+      }
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+
+    .summary-box {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+      border: 1px solid #FED7AA;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .summary-box h3 {
+      color: #9A3412;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .summary-box p {
+      color: #9A3412;
+      font-size: 0.925rem;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--slate-100);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: var(--primary);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 800;
+      border-radius: 50%;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li strong {
+      color: var(--slate-800);
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 1.25rem 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--slate-200);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    th {
+      background: var(--slate-100);
+      color: var(--slate-800);
+      padding: 0.85rem 1rem;
+      font-weight: 700;
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--slate-200);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .contact-card {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-card strong {
+      display: block;
+      color: var(--slate-900);
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-card a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      border-top: 1px solid var(--slate-200);
+      background: #FFFFFF;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: var(--slate-500);
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: var(--slate-700);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="https://vamaha.tech/" class="brand">
+        <div class="brand-logo">S</div>
+        <span class="brand-title">ScanDukaan</span>
+        <span class="brand-badge">Official</span>
+      </a>
+      <span style="font-size: 0.85rem; color: var(--slate-500);">By Vamaha Tech</span>
+    </div>
+  </header>
+
+  <div class="hero-banner">
+    <div class="hero-badge">Legal & Security</div>
+    <h1 class="hero-title">Privacy Policy</h1>
+    <p class="hero-subtitle">Effective Date: September 28, 2026 | Last Updated: September 28, 2026</p>
+  </div>
+
+  <div class="page-container">
+    <div class="content-card">
+
+      <div class="summary-box">
+        <h3>🛡️ Plain-Language Privacy Promise</h3>
+        <p>
+          <strong>ScanDukaan</strong> is built on an <strong>offline-first</strong> architecture. Your inventory, sales transactions, prices, and customer Udhar records belong entirely to you. We <strong>never sell</strong> your business data, and we do not serve third-party banner or tracker advertisements.
+        </p>
+      </div>
+
+      <!-- 1. Introduction -->
+      <div class="section">
+        <h2><span class="section-num">1</span> Overview & Application Scope</h2>
+        <p>
+          This Privacy Policy explains how <strong>Vamaha Tech</strong> ("we", "us", or "our") collects, uses, stores, and protects information when you install and use the <strong>ScanDukaan</strong> mobile application (Package Name: <code>com.scandukaan.app</code>) and related cloud sync services.
+        </p>
+        <p>
+          ScanDukaan is an offline-capable, barcode-first point-of-sale (POS) and inventory management tool designed for small retail shopkeepers, kirana stores, and independent merchants.
+        </p>
+      </div>
+
+      <!-- 2. Data We Collect -->
+      <div class="section">
+        <h2><span class="section-num">2</span> Information We Collect & Why</h2>
+        <p>
+          We only collect data strictly necessary to operate the billing system, manage store inventory, maintain credit registers (Khata), and synchronize your data securely across authorized shop devices:
+        </p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Authentication & Account</strong></td>
+                <td>Mobile phone number, email address, Google account ID (if Google Sign-In is chosen), device identifier</td>
+                <td>Account creation, multi-factor login (OTP), session security, and multi-device account verification.</td>
+              </tr>
+              <tr>
+                <td><strong>Shop Profile</strong></td>
+                <td>Shop name, business phone number, physical address, Shop UPI ID</td>
+                <td>Printed on customer receipts, checkout payment QR code generation, and shop profile backup.</td>
+              </tr>
+              <tr>
+                <td><strong>Inventory & Products</strong></td>
+                <td>Product names, barcodes, selling prices, purchase prices, MRP, stock counts, units, categories, product photos</td>
+                <td>Enables 1-second barcode billing, real-time stock alerts, inventory movement auditing, and catalog search.</td>
+              </tr>
+              <tr>
+                <td><strong>Sales & Transactions</strong></td>
+                <td>Invoice numbers, line items, sale amounts, discounts, payment methods (Cash, UPI, Credit)</td>
+                <td>Generates printable/shareable receipts and tracks business sales performance.</td>
+              </tr>
+              <tr>
+                <td><strong>Customer Khata (Udhar)</strong></td>
+                <td>Customer name, phone number, balance ledger, repayment entries</td>
+                <td>Maintains customer credit balances and repayment records entered manually by the shopkeeper.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 3. Device Permissions -->
+      <div class="section">
+        <h2><span class="section-num">3</span> Android Device Permissions</h2>
+        <p>
+          ScanDukaan requests only runtime Android permissions required for hardware-integrated billing workflows:
+        </p>
+        <ul>
+          <li>
+            <strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used solely to scan product barcodes in real-time and to capture product photos for your catalog. We do not stream, record, or analyze camera feeds outside of active scanning or photo capture initiated by you.
+          </li>
+          <li>
+            <strong>Storage / Filesystem (<code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code>):</strong> Required to manage your local SQLite database on the device, store receipt PDF/image exports, and load product images locally while offline.
+          </li>
+          <li>
+            <strong>Internet & Network State (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used exclusively to authenticate your credentials, securely synchronize your offline SQLite database with your cloud backup, and upload product photos to AWS S3.
+          </li>
+          <li>
+            <strong>Bluetooth (<code>BLUETOOTH</code>, <code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH_SCAN</code>):</strong> Used to discover and connect to external Bluetooth thermal ESC/POS receipt printers when you choose to print a physical bill.
+          </li>
+        </ul>
+      </div>
+
+      <!-- 4. Offline-First Security -->
+      <div class="section">
+        <h2><span class="section-num">4</span> Offline-First Storage & Cloud Synchronization</h2>
+        <p>
+          <strong>Offline by default:</strong> ScanDukaan stores all inventory, pricing, barcodes, and transaction logs inside an isolated SQLite database on your device. You can perform full checkout and stock tracking with Airplane Mode active.
+        </p>
+        <p>
+          <strong>Encrypted Cloud Sync:</strong> When an active internet connection is detected, changes sync to our cloud infrastructure (PostgreSQL database hosted on secure servers) using industry-standard TLS 1.3 encryption.
+        </p>
+        <ul>
+          <li>Passwords are never stored in plaintext; they are hashed using secure cryptographic algorithms.</li>
+          <li>Authentication sessions utilize signed JSON Web Tokens (JWT) with rotating refresh tokens and server-side revocation capability.</li>
+          <li>Product media uploads are transferred directly to private Amazon S3 buckets via signed, time-limited presigned URLs.</li>
+        </ul>
+      </div>
+
+      <!-- 5. Third-Party Integrations -->
+      <div class="section">
+        <h2><span class="section-num">5</span> Third-Party Service Providers</h2>
+        <p>
+          We rely on reputable infrastructure providers to operate the service. These providers process data strictly on our instructions and under confidentiality obligations:
+        </p>
+        <ul>
+          <li><strong>Google Identity Services:</strong> Provides optional, one-tap Google OAuth sign-in authentication.</li>
+          <li><strong>Amazon Web Services (AWS S3 & CloudFront):</strong> Secure object storage and content distribution for product catalog images.</li>
+          <li><strong>Transactional SMS/Email Gateways:</strong> Used solely to deliver authentication OTP codes (e.g., MSG91, Twilio, or Resend).</li>
+        </ul>
+        <p>
+          <strong>No Third-Party Advertising:</strong> We do not integrate third-party ad networks (like AdMob, Facebook Audience Network, or data brokers). We do not monetize your data.
+        </p>
+      </div>
+
+      <!-- 6. Data Ownership & User Rights -->
+      <div class="section">
+        <h2><span class="section-num">6</span> Data Ownership, Retention & Deletion</h2>
+        <p>
+          You retain full ownership of your data at all times:
+        </p>
+        <ul>
+          <li><strong>Correction & Modification:</strong> You can edit or delete any product, barcode, customer, or transaction directly within the app.</li>
+          <li><strong>Local Data Wipe:</strong> The in-app Settings menu provides an explicit "Clear All Data" utility that immediately wipes all local database records.</li>
+          <li><strong>Account & Cloud Deletion:</strong> You have the right to request permanent deletion of your account, cloud backups, and associated store records. Email us at <a href="mailto:support@vamaha.tech">support@vamaha.tech</a> with your registered phone number or email, and all cloud copies will be permanently purged within 30 business days.</li>
+        </ul>
+      </div>
+
+      <!-- 7. Children's Privacy -->
+      <div class="section">
+        <h2><span class="section-num">7</span> Children's Privacy</h2>
+        <p>
+          ScanDukaan is a commercial enterprise application designed for business owners and retail operators. It is not intended for use by children under the age of 13. We do not knowingly collect personal information from children.
+        </p>
+      </div>
+
+      <!-- 8. Updates to this Policy -->
+      <div class="section">
+        <h2><span class="section-num">8</span> Policy Updates</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect product enhancements, legal updates, or regulatory requirements. Any material changes will be communicated via in-app notices or through our official website. Continued use of ScanDukaan constitutes acceptance of the revised policy.
+        </p>
+      </div>
+
+      <!-- 9. Contact Us -->
+      <div class="section">
+        <h2><span class="section-num">9</span> Contact & Data Grievance Officer</h2>
+        <p>
+          If you have any questions, grievances, or requests regarding this Privacy Policy or your data, please contact us:
+        </p>
+
+        <div class="contact-card">
+          <strong>Vamaha Tech</strong>
+          <p style="margin-bottom: 0.25rem;">Developer & Publisher of ScanDukaan</p>
+          <p style="margin-bottom: 0.25rem;">Website: <a href="https://vamaha.tech/" target="_blank" rel="noopener">https://vamaha.tech/</a></p>
+          <p style="margin-bottom: 0;">Support Email: <a href="mailto:support@vamaha.tech">support@vamaha.tech</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Vamaha Tech. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;">
+      <a href="https://vamaha.tech/">Home</a> &bull; 
+      <a href="./privacyPolicy.html">Privacy Policy</a> &bull; 
+      <a href="mailto:support@vamaha.tech">Support</a>
+    </p>
+  </footer>
+
+</body>
+</html>
