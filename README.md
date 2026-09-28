@@ -1,0 +1,2 @@
+# scandukkan-privacypolicy
+privacy policy
